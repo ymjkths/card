@@ -28,8 +28,8 @@ from linebot.v3.webhooks import (
 )
 from starlette.exceptions import HTTPException
 
-channel_secret = os.getenv('29c265e9475e5f849983f96dbd51eb61', None)
-channel_access_token = os.getenv('mtcfTVD5/zm5qjdbl+c2ruubjGvDtMKasLVmJZ8PTKfX+tOJgpEJO1K9BKyHh0/dsVyZBotzmvbXSMvQ/lmBA5B+0M5YKJDwlZHwjJ+AjvYXepr4aOTO5EIki8a0IrdzM7aqFVyHr7N+MO+wn38cvwdB04t89/1O/w1cDnyilFU=', None)
+channel_secret = os.getenv('LINE_CHANNEL_SECRET', None)
+channel_access_token = os.getenv('LINE_CHANNEL_ACCESS_TOKEN', None)
 if channel_secret is None:
   print('Specify LINE_CHANNEL_SECRET as environment variable.')
   sys.exit(1)
