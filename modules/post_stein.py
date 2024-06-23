@@ -3,7 +3,7 @@ import os
 import requests
 from dotenv import load_dotenv; load_dotenv()
 
-stein_url = os.getenv('https://api.steinhq.com/v1/storages/667640d84d11fd04f00b3bce')
+stein_url = os.getenv('STEIN_URL')
 
 def post_stein_api(data: dict):
   data_str = json.dumps(data)
