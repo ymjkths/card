@@ -23,7 +23,7 @@ def detect_text(path: str = None, content: bytes=None):
   response = client.text_detection(image=image)
   texts = response.text_annotations
   text = texts[0].description
-  
+  print(text)
   # text_list = []
   # for text in texts:
   #   text_list.append(text.description)
